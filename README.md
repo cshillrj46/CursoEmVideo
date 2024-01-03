@@ -1,3 +1,3 @@
 # CursoEmVideo
 Curso básico de Python\
-Prof. Gustavo Guanabara\
+Prof. Gustavo Guanabara
