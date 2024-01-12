@@ -1,7 +1,4 @@
-num1 = 0
-num2 = 0
 menu = 0
-total = 0
 num1 = int(input('Digite o primeiro valor: '))
 num2 = int(input('Digite o segundo valor: '))
 while menu != 5:
@@ -18,8 +15,18 @@ while menu != 5:
         total = num1 * num2
         print('{} multiplicado por {} é igual a {}.'.format(num1, num2, total))
     elif menu == 3:
-        print('maior')
+        if num1 > num2:
+            maior = num1
+            print('{} é o número maior.'.format(maior))
+        elif num1 == num2:
+            print('Os números digitados são \033[33mIGUAIS\033[m.')
+        else:
+            maior = num2
+            print('{} é o número maior.'.format(maior))
     elif menu == 4:
         num1 = int(input('Digite o primeiro valor: '))
         num2 = int(input('Digite o segundo valor: '))
-print('FIM') 
+    elif menu == 5:
+        print('FIM')
+    else:
+        print('OPÇÃO ERRADA.')
