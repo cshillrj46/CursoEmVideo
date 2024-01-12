@@ -4,4 +4,3 @@ decimo = num + (10 - 1) * raz
 for num in range(num, decimo + raz, raz):
     print(num, end = ' - ')
 print('FIM')
- 

@@ -1,12 +1,12 @@
-'''c = 1
+c = 1
 while c <= 10:
     print(c)
-    c = c + 1'''
+    c = c + 1
 
 '''n = 1
 while n != 0:
     n = int(input('Digite um valor: '))
-print('FIM')'''
+print('FIM')
 
 n = 1
 par = 0
@@ -17,5 +17,5 @@ while n != 0:
         par = par + 1
     else:
         impar = impar + 1
-print('{} números pares e {} números ímpares.'.format(par, impar))
+print('{} números pares e {} números ímpares.'.format(par, impar))'''
 
