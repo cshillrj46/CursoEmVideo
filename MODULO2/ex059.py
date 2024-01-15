@@ -1,3 +1,4 @@
+from time import sleep
 menu = 0
 num1 = int(input('Digite o primeiro valor: '))
 num2 = int(input('Digite o segundo valor: '))
@@ -29,4 +30,5 @@ while menu != 5:
     elif menu == 5:
         print('FIM')
     else:
-        print('OPÇÃO ERRADA.')
+        print('\033[31mOPÇÃO ERRADA.\033[m')
+    sleep(2)

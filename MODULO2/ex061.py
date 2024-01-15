@@ -1,6 +1,9 @@
 cont = 1
-num = 0
+num = int(input('Informe o primeiro termo da Progressão Aritmética: '))
+raz = int(input('Informe a razão da PA: '))
+termo = num
 while cont <= 10:
-    num = int(input('Informe o primeiro termo da Progressão Aritmética: '))
-    raz = int(input('Informe a razão da PA: '))
-    
+    print('{} - '.format(termo), end = '')
+    termo = termo + raz
+    cont = cont + 1
+print('FIM')
