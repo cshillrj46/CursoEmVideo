@@ -1,4 +1,4 @@
-'''for c in range(0, 10):
+for c in range(0, 10):
     print('Olá, Mundo!')
 print('*' * 12)
 print('FIM')
@@ -21,7 +21,7 @@ passo = int(input('Quer pular quantos números? '))
 fim = int(input('Quer terminar em que número?'))
 for c in range(inicio, fim + 1, passo):
     print(c)
-print('FIM')'''
+print('FIM')
 #############################
 s = 0
 for c in range(0, 3):

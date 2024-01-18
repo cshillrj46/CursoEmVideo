@@ -5,6 +5,7 @@ while sair != 'S':
     sair = str(input('Deseja SAIR [ S/N ]? ')).upper().strip()[0]
     soma = soma + num
     quant = quant + 1
+    print(quant)
     if quant == 1:
         maior = menor = num
     else:
