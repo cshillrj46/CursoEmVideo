@@ -1,5 +1,4 @@
 dados = []
-cada = []
 while True:
     nome = input('Digite o nome: ').upper().strip()
     nota1 = float(input('Digite a 1ª nota: '))
@@ -16,5 +15,5 @@ while True:
     choice = int(input('Informe o número do aluno que deseja ver as notas: '))
     if choice == 999:
         break
-    if choice <=len(dados) - 1:
+    if choice <= len(dados) - 1:
         print(f'{dados[choice][0]}: Notas {dados[choice][1]}')
