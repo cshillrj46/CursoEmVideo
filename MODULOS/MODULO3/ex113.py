@@ -1,27 +1,30 @@
 
-def leiaInt():
-    try:
-        num = int(input('Digite um número inteiro: '))
+def leiaInt(msg):
+    while True:
+        try:
+            n = int(input(msg))
+        except (ValueError, TypeError):
+            print('\033[31mERRO! Digite um número VÁLIDO.\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('Usuário não informou valor.')
+        else:
+            return n
+        
 
-    except:
-        print('Você digitou algo ERRADO!')
-
-    else:
-        print(f'Você digitou o número {num}')
-
-    
-   
-n = leiaInt()
-
-def leiaFloat():
-    try:
-        num = float(input('Digite um número REAL: '))
-
-    except:
-            print('Você digitou um número ERRADO!')
-
-    else:
-        print(f'Seu número REAL é {num}')
+def leiaFloat(msg):
+    while True:
+        try:
+            n = float(input(msg))
+        except (ValueError, TypeError):
+            print('\033[31mERRO! Digite um número VÁLIDO.\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('Usuário não informou valor.')
+        else:
+            return n
 
 
-num = leiaFloat()
+num = leiaInt('Digite um número INTEIRO: ')
+num2 = leiaFloat('Digite um número REAL: ')
+print(f'O número INTEIRO digitado foi {num} e o REAL foi {num2}')
